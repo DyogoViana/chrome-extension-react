@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Box from "../Box";
+import Card from "../Card";
 
-const FormSignUpLogin = styled(Box).attrs({ as: 'form' })`
-    width: 600px;
-    height: 420px;
+const FormSignUpLogin = styled(Card).attrs({ as: 'form' })`
+    width: 521px;
+    height: 587px;
 `;
 
 export default FormSignUpLogin;
