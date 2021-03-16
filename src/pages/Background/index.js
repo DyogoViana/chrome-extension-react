@@ -1,2 +1,9 @@
-console.log('This is the background page.');
-console.log('Put the background scripts here.');
+import { createGlobalStyle } from "styled-components";
+
+const Background = createGlobalStyle`
+    body {
+        background: radial-gradient(#233F6C, #122036);
+    }
+`;
+
+export default Background;
