@@ -7,6 +7,10 @@ import Routes from '../../routes';
 import Newtab from './Newtab';
 import './index.css';
 
+
+// TODO: Search about chrome Browser History
+// this.history = createBrowserHistory();
+
 render(
     <React.StrictMode>
         <Newtab />
