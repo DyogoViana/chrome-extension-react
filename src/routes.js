@@ -1,9 +1,5 @@
 import React from 'react';
 import {Route, BrowserRouter} from 'react-router-dom';
-// import { Switch, Route } from 'react-router-dom';
-
-import ImportWallet from "./pages/Newtab/ImportWallet";
-
  
 function Routes(){
     return (
