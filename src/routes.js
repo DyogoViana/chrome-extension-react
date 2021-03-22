@@ -1,20 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
-import ImportWallet from './components/ImportWallet';
-import CreateWallet from './components/CreateWallet';
+import ImportWallet from './pages/ImportWallet';
+// import CreateWallet from './components/CreateWallet';
 
-function Routes() {
+
+export default function Routes() {
 	return (
-		<BrowserRouter>
-			<Switch>
-				{/* <Route path="/" component={Home} exact /> */}
-				<Route path="/importWallet" component={ImportWallet} />
-				<Route path="/createWallet" component={CreateWallet} />
-				<Route component={Error} />
-			</Switch>
-		</BrowserRouter>
-	)
-}
+		<Switch>
+			<Route path="/importwallet" component={ImportWallet} />
+			{/* <Route path="/createWallet" component={CreateWallet} /> */}
+			<Route component={Error} />
+		</Switch>
+	);
+};
 
-export default Routes;

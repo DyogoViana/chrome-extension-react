@@ -1,9 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+let color = '#3aa757';
 
-const Background = createGlobalStyle`
-    body {
-        background: radial-gradient(#233F6C, #122036);
-    }
-`;
-
-export default Background;
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({ color });
+  console.log('Default background color set to %cgreen', `color: ${color}`);
+});
