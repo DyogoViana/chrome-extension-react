@@ -1,12 +1,12 @@
-function App() {
+import React from 'react';
+import Routes from './routes';
+
+export default function App() {
 	return (
-	  <div className="App">
-		 <header className="App-header">
+		<main>
+			 <Routes />
 			<h1>Follwo the White Rabbit</h1>
-		 </header>
-	  </div>
+		</main>
 	);
  }
 
- export default App;
- 
