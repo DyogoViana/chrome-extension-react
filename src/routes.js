@@ -8,7 +8,7 @@ import ImportWallet from './pages/ImportWallet';
 export default function Routes() {
 	return (
 		<Switch>
-			<Route path="/importwallet" component={ImportWallet} />
+			<Route path="/importWallet" component={ImportWallet} />
 			{/* <Route path="/createWallet" component={CreateWallet} /> */}
 			<Route component={Error} />
 		</Switch>
